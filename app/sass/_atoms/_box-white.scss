@@ -1,0 +1,16 @@
+// File Name: _box-white.scss
+// Description: 
+// Used by: main.scss
+// Author: BartDukes
+// Date: 18.04.2017
+// Dependencies:
+// ------------------------------------------------------------
+.box-white {
+	background: $white;
+	@include border-radius(.25em);
+	border: .1em solid $green;
+	margin-bottom: $spacer;
+	&.content-forms {
+		padding: 2em;
+	}
+}

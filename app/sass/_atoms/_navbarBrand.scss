@@ -1,0 +1,31 @@
+// File Name: _navbarBrand.scss
+// Description: 
+// Used by: main.scss
+// Author: BartDukes
+// Date: 28.03.2017
+// Dependencies:
+// ------------------------------------------------------------
+.navbar-brand {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	color: $green;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 1em;
+	background: $blue-dark;
+	margin: $navbar-brand-padding-y $navbar-brand-padding-x;
+	padding: 0 0 0 .5em;
+	span {
+		font-size: .8rem;
+		font-weight: 100;
+		color: $green-lighter;
+		background: $green-dark;
+		padding: .5em .5em;
+		margin-left: .5em;
+	}
+	img {
+		height: 2rem;
+	}
+}

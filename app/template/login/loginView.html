@@ -1,0 +1,21 @@
+<section class="content-login animated flipInY">
+	<header class="form-elements">
+		<h3>Logowanie</h3>
+		<p>Zaloguj się aby przejść do dalszej częsci aplikacji</p>
+	</header>
+	<article>
+		<form name="form">
+			<div class="form-group form-group-vertical">
+				<label for="emailInput">{{'LOGIN.USERNAME' | translate}}</label>
+				<input id="emailInput" ng-model="vm.credentials.login" class="form-control" autocomplete="off" required />
+			</div>
+			<div class="form-group form-group-vertical">
+				<label for="passwordInput">{{'LOGIN.PASSWORD' | translate}}</label>
+				<input id="passwordInput" type="password" ng-model="vm.credentials.password" class="form-control" required />
+			</div>
+			<button ng-disabled="form.$invalid" spinner type="submit" ng-click="vm.logIn()" class="btn btn-primary">{{'LOGIN.APPLY' | translate}}</button>
+			<a ui-sref="registration" class="btn btn-secondary">{{'LOGIN.REGISTRATION' | translate}}</a>
+		</form>
+		<div ng-show="vm.hasError()" class="error-msg">{{vm.errorToken | translate}}</div>
+	</article>
+</section>
