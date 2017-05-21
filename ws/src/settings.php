@@ -18,7 +18,7 @@ return [
         'db' => [
             'driver' => 'mysql',
             'host' => 'localhost',
-            'database' => 'premie',
+            'database' => 'bigdata',
             'username' => 'root',
             'password' => '',
             'charset'   => 'utf8',
